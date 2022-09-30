@@ -1,0 +1,42 @@
+@import "./variables.module.scss";
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+hr {
+  width: 100%;
+  border: 1px solid;
+  border-color: $light-gray;
+  margin: 2rem 0;
+}
+.restaurants-wrapper {
+  display: grid;
+  grid-template-columns: 18% 18% 18% 18% 18%;
+  grid-template-rows: auto;
+  column-gap: 2.5%;
+  row-gap: 1rem;
+}
+@media only screen and (max-width: 1400px) {
+  .restaurants-wrapper {
+    grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .restaurants-wrapper {
+    grid-template-columns: calc(33.333% - 2.5%) calc(33.333% - 2.5%) calc(
+        33.333% - 2.5%
+      );
+  }
+}
+@media only screen and (max-width: 900px) {
+  .restaurants-wrapper {
+    grid-template-columns: 47.5% 47.5%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .restaurants-wrapper {
+    grid-template-columns: 100%;
+    column-gap: 0%;
+  }
+}

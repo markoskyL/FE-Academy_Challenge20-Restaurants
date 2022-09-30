@@ -1,0 +1,27 @@
+@import "../../variables.module.scss";
+
+.details-page {
+  .detail-restaurant {
+    background-color: $light-gray;
+    border-radius: 10px;
+    .detail-img {
+      height: 70vh;
+      width: 100%;
+      object-fit: cover;
+      background-color: rgb(50, 56, 81);
+      border-radius: 10px;
+    }
+    .details-wrapper {
+      padding: 0.5rem 1rem;
+    }
+    .detail-rating {
+      margin-bottom: 0;
+    }
+    .detail-reviews {
+      margin-top: 0.3rem;
+    }
+  }
+  h2 {
+    margin: 3rem 0 2rem;
+  }
+}

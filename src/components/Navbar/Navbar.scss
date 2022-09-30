@@ -1,0 +1,31 @@
+.navbar {
+  .nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0 1.5rem;
+    .nav-heart {
+      font-size: 1.6em;
+      color: #ff6348;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        font-size: 1.61em;
+        color: #ff2f0a;
+      }
+    }
+    h2 {
+      font-size: 1em;
+      margin: 0;
+      color: rgb(43, 43, 43);
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        font-size: 1.01em;
+        color: black;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

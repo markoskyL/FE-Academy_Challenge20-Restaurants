@@ -1,0 +1,19 @@
+@import "../../../variables.module.scss";
+
+.review-form-wrapper {
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      padding: 0.3rem 0;
+      margin-bottom: 0.5rem;
+    }
+    label {
+      margin-bottom: 0.2rem;
+    }
+    .submit-btn {
+      background-color: $green;
+      color: white;
+    }
+  }
+}

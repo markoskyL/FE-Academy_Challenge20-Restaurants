@@ -1,0 +1,23 @@
+@import "../../variables.module.scss";
+.cuisines-types-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: 3rem 0;
+  .r-type {
+    background-color: $orange;
+    font-size: 0.9em;
+    font-weight: bolder;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 0.7rem 1rem;
+    margin: 0 0.5rem 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.1s ease-in-out;
+    &:hover {
+      background-color: $orange-hover;
+    }
+  }
+}

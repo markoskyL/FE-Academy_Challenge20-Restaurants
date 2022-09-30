@@ -1,0 +1,63 @@
+@import "../../variables.module.scss";
+.restaurant-card {
+  background-color: $light-gray;
+  border-radius: 13px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  outline: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.1);
+    z-index: 3;
+    background-color: $light-gray-hover;
+    box-shadow: 0px 11px 33px 0px rgba(0, 0, 0, 0.25);
+    outline: 1px solid black;
+  }
+  .r_heart {
+    font-size: 1.8em;
+    left: 15px;
+    top: 15px;
+    position: absolute;
+    color: $orange;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      color: $orange-hover;
+    }
+  }
+  .image-wrapper {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 13px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .restaurant-details {
+    padding: 1rem 1rem 0.5rem;
+    .r_title {
+      margin: 0.5rem 0;
+      color: black;
+    }
+    .r_type {
+      margin: 0.5rem 0 1rem;
+      color: $orange;
+    }
+    .r_rating,
+    .r_reviews {
+      color: black;
+      margin: 0.5rem 0;
+    }
+  }
+}
